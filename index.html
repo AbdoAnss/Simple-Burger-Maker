@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT Task 1</title>
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="res/images/favicon.ico">
+ <title>My Dashboard</title>
+ </head>
+ <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>John Doe</li>
+                <li> 01/11/1999</li>
+                <li> Advanced Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>4.76</strong>
+        </div>
+    </section>
+    <form>
+        <label for="courseTitle">Course Title:</label><br>
+        <input type="text" id="courseTitle" name="courseTitle" required><br>
+        <label for="semester">Semester:</label><br>
+        <select id="semester" name="semester">
+          <option value="fall">Fall</option>
+          <option value="spring">Spring</option>
+        </select><br>
+        <label>Attendance:</label><br>
+        <input type="radio" id="virtual" name="attendance" value="virtual">
+        <label for="virtual">Virtual attendance</label><br>
+        <input type="radio" id="physical" name="attendance" value="physical">
+        <label for="physical">Physical attendance</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Agile software development</td>
+                    <td>fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Systems modelling </td>
+                    <td>fall</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> Requirements Engineering </td>
+                    <td>fall</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> Human Computer Interaction </td>
+                    <td>fall</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.inpt.ac.ma/">moodle</a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://m.inpt.ac.ma/">Courses</a>
+            </li>
+        </ul>
+    </footer>
+      
+      
     
-</head>
-<body>
-    <style>
-        img{
-            width: 250px;
-            padding: 4% 0 0 0;
-        }
-        div{
-            background-color: darkcyan;
-            width: 300px;
-            text-align: center;
-            color: white;
-            padding: 0px 0px 10px 10px;
-            border: 1px solid black;
-            border-radius: 20px;
-            box-shadow: 0px 15px 30px black;
-            transition-duration: 0.5s;
-        }
-        div:hover{
-            background-color: white;
-            color: black;
-            
-        }
-        p{
-            font-size: 24px;
-        }
-    </style>
-    <div>
-        <img src="./_41a223f1-cba3-4eef-8df1-db470385a7f0.jpeg" alt="">
-        <hr>
-        <h1>Title</h1>
-        <p>The red city of Marrakech!</p>
-    </div>
-    
-</body>
+ </body>
+
 </html>

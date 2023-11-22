@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" href="res/images/favicon.ico">
+ <link href="style.css" rel="stylesheet">
  <title>My Dashboard</title>
  </head>
  <body>
@@ -14,18 +15,19 @@
         <div>
             <img src="res/images/me.png" width="128" height="128" alt="My picture">
         </div>
-        <div>
+        <div class="child">
             <ul>
                 <li>John Doe</li>
-                <li> 01/11/1999</li>
-                <li> Advanced Software Engineering </li>
+                <li>01/11/1999</li>
+                <li>Advanced Software Engineering </li>
             </ul>
         </div>
         <div>
-            <strong>4.76</strong>
+            <strong style="font-size: large; background-color: rgb(255, 127, 131);">GPA: 4.76</strong>
         </div>
     </section>
-    <form>
+
+    <form class="child2">
         <label for="courseTitle">Course Title:</label><br>
         <input type="text" id="courseTitle" name="courseTitle" required><br>
         <label for="semester">Semester:</label><br>
@@ -33,14 +35,14 @@
           <option value="fall">Fall</option>
           <option value="spring">Spring</option>
         </select><br>
-        <label>Attendance:</label><br>
+        <strong><label>Attendance:</label></strong><br>
         <input type="radio" id="virtual" name="attendance" value="virtual">
         <label for="virtual">Virtual attendance</label><br>
         <input type="radio" id="physical" name="attendance" value="physical">
         <label for="physical">Physical attendance</label><br>
         <input type="submit" value="Submit">
     </form>
-    <section>
+    <section class="child">
         <h1>Courses</h1>
         <table>
             <thead>
@@ -89,7 +91,7 @@
             </li>
         </ul>
     </footer>
-
+    
       
     
  </body>

@@ -1,99 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="icon" href="res/images/favicon.ico">
- <link href="style.css" rel="stylesheet">
- <title>My Dashboard</title>
- </head>
- <body>
-    <header>
-        <strong>Welcome to your dashboard!</strong>
-    </header>
-    <section>
-        <div>
-            <img src="res/images/me.png" width="128" height="128" alt="My picture">
-        </div>
-        <div class="child">
-            <ul>
-                <li>John Doe</li>
-                <li>01/11/1999</li>
-                <li>Advanced Software Engineering </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Maker</title>
+    <link rel="shortcut icon" href="res/images/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="res/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary sticky-top " >
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Burger Maker</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="playground.html">Playground</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">This is School Project</a>
+              </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div>
-            <strong style="font-size: large; background-color: rgb(255, 127, 131);">GPA: 4.76</strong>
+      </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4">Burger Maker</h1>
+                <p class="lead">Help us make the best burger in the world at the lowest price ever! what are you waiting for!!.</p>
+                <a href="playground.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <img src="res/images/burger.png" alt="burger" class="w-50 img-fluid">
+            </div>
         </div>
-    </section>
+    </div>
+    <div class="card"><div class="card-title">&emsp;</div></div>
 
-    <form class="child2">
-        <label for="courseTitle">Course Title:</label><br>
-        <input type="text" id="courseTitle" name="courseTitle" required><br>
-        <label for="semester">Semester:</label><br>
-        <select id="semester" name="semester">
-          <option value="fall">Fall</option>
-          <option value="spring">Spring</option>
-        </select><br>
-        <strong><label>Attendance:</label></strong><br>
-        <input type="radio" id="virtual" name="attendance" value="virtual">
-        <label for="virtual">Virtual attendance</label><br>
-        <input type="radio" id="physical" name="attendance" value="physical">
-        <label for="physical">Physical attendance</label><br>
-        <input type="submit" value="Submit">
-    </form>
-    <section class="child">
-        <h1>Courses</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Course Title</th>
-                    <th>Semester</th>
-                    <th>Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Agile software development</td>
-                    <td>fall</td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td> Systems modelling </td>
-                    <td>fall</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td> Requirements Engineering </td>
-                    <td>fall</td>
-                    <td>99</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td> Human Computer Interaction </td>
-                    <td>fall</td>
-                    <td>65</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <footer>
-        <ul>
-            <li>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.inpt.ac.ma/">moodle</a>
-            </li>
-            <li>
-                <a target="_blank" rel="noopener noreferrer" href="https://m.inpt.ac.ma/">Courses</a>
-            </li>
-        </ul>
-    </footer>
-    
-      
-    
- </body>
+    <!-- A Quote -->
+    <div class="container callout">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>The hamburger is a gastronomic icon of modern times.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Phyllis Richman in <cite title="Source Title">His book.</cite>
+            </figcaption>
+        </figure>
+    </div>
 
+    <div class="card"><div class="card-title">&emsp;</div></div>
+
+
+    
+    
+    
+
+
+
+    <!-- Bootstrap JS and dependencies (include them at the end of the body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rbs5vwnosKCAK5p+CczxfwXz5Kn0RyQ8MYhv8T/w6IlfbsqjYaivGkEIfHiREUs0" crossorigin="anonymous"></script>
+
+
+
+
+</body>
 </html>
+
